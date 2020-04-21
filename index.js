@@ -14,7 +14,8 @@ const server = http.createServer(
     function (req, res) {
         //res.end('Hello World');
 
-        //GET the URL and PARCE
+        //GET the URL and PARSE
+        let parseURL = url.parse(req.url, true);
 
         //GET the PATH
 
